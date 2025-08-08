@@ -27,7 +27,7 @@ class LottoController extends GetxController {
   }
 
   Future<void> fetchLottoData(String url) async {
-    loading.value = true;
+    loading.value = true; //เท่
     error.value = '';
     try {
       final resp = await http.get(Uri.parse(url));
